@@ -1,102 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulir Registrasi Data mahasiswa</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulir Registrasi Data Mahasiswa</title>
 </head>
 <body>
-    <h1>Formulir Registrasi Data Mahasiswa </h1>
-        <form action="" method="post" enctype="multipart/form-data">
-        <table cellspacing="4" cellpading="4" border="1" style="border-collapse:collapse;width:100%;">
-            <tr>
-                <td><label for="nomhs"><strong>Nomor Mahasiswa</strong></label></td>
-                <td><input type="text" name="nomor_mahasiswa" size="30"></td>
-            </tr>
-
-            <tr>
-                <td><label for="namamhs"><strong>Nama Mahasiswa</strong></label></td>
-                <td><input type="text" name="nama_mahasiswa" size="30"></td>
-            </tr>
-
-            <tr>
-                <td><strong>Jenis Kelamin</strong></></td>
-                <td>
-                    <input type="radio" name="jk" id="Laki-laki">
-                    <label for="Laki-laki">Laki-laki</label>
-                    <input type="radio" name="jk" value="Perempuan" required>Perempuan
-                </td>
-            </tr>
-
-            <tr>
-                <td><label for="prodi"><strong>Program Studi</strong></label></td>
-                <td>
-                    <select id="prodi" name="prodi" required>
-                        <option>Teknik Informatika</option>
-                        <option>Teknik Industri</option>
-                    </select>
-                </td>
-            </tr>
-            
-            <tr>
-                <td><label for="prodi"><strong>Alamat Email</strong></label></td>
-                <td><input type="email" name="email" size="30"></td>
-            </tr>
-            <tr>
-                <td><label for="prodi"><strong>Nomor Telepon</strong></label></td>
-                <td><input type="text" name="no_telp" size="30"></td>
-            </tr>
-            <tr>
-                <td><label for="prodi"><strong>Password</strong></label></td>
-                <td><input type="password" name="password" size="30"></td>
-            </tr>
-            <tr>
-                <td><label for="foto"><strong>Foto</strong></label></td>
-                <td><input type="file" name="foto" accept="image/*" required></td>
-            </tr>
-            <tr>
-                <td><label for="namasmu"><strong>Nama Sekolah Asal</strong></label></td>
-                <td><input type="text" name="namasmu" size="30"></td>
-                
-            </tr>    
-            <tr>
-                <td><label for="alamatsmu"><strong>Alamat Sekolah Asal</strong></label></td>
-                <td><input type="text" name="alamatsmu" size="30"></td>
-            </tr>    
-            <tr>
-                <td><label for="teleponsmu"><strong>Telepon Sekolah Asal</strong></label></td>
-                <td><input type="text" name="teleponsmu" size="30"></td>
-            </tr>    
-            
-            <tr>
-                <td valign="top"><strong>Hal Favorit</strong></td>
-                <td>
-                    <p><strong>Musik</strong></p>
-                    <input type="checkbox" name="hobi[]" value="Musik">Pop
-                    <input type="checkbox" name="hobi[]" value="Musik">Rock
-                    <input type="checkbox" name="hobi[]" value="Musik">Jazz
-                    <div>
-                        <p><strong>Film</strong></p>
-                        <input type="checkbox" name="hobi[]" value="Film">Drama
-                        <input type="checkbox" name="hobi[]" value="Film">Action
-                        <input type="checkbox" name="hobi[]" value="Film">Sci-Fi
-                    </div>
-                    <div>
-                        <p><strong>Makanan</strong></p>
-                        <input type="checkbox" name="hobi[]" value="Makanan">Seafood
-                        <input type="checkbox" name="hobi[]" value="Makanan">Tradisional
-                        <input type="checkbox" name="hobi[]" value="Makanan">Fastfood
-                    </td>
-                    <tr>
-                        <td vailgn="top"><label for="resume"><strong>Resume</strong></label></td>
-                    <td>
-                        <textarea name="resume" rows="10" cols="23"></textarea>  
-                    </td>
-                </tr>
-            <tr>
-                <td colspan="2" style="text-align:center">
-                    <input type="submit" name="simpan" value="Simpan">
-                </td>
-            </form>
+  <h1>Formulir Registrasi Data Mahasiswa</h1>
+  <form action="" method="post" enctype="multipart/form-data">
+    <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse;width:100%;">
+      <tr>
+        <td><label for="nomhs"><strong>Nomor Mahasiswa</strong></label></td>
+        <td><input type="text" name="nomor_mahasiswa" size="30" /></td>
+      </tr>
+      <tr>
+        <td><label for="namamhs"><strong>Nama Mahasiswa</strong></label></td>
+        <td><input type="text" name="nama_mahasiswa" size="30" /></td>
+      </tr>
+      <tr>
+        <td><strong>Jenis Kelamin</strong></td>
+        <td>
+          <input type="radio" name="jk" id="Laki-laki" value="Laki-laki" />
+          <label for="Laki-laki">Laki-laki</label>
+          <input type="radio" name="jk" id="Perempuan" value="Perempuan" required="required" />
+          <label for="Perempuan">Perempuan</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="prodi"><strong>Program Studi</strong></label></td>
+        <td>
+          <select id="prodi" name="prodi" required="required">
+            <option>Teknik Informatika</option>
+            <option>Teknik Industri</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="email"><strong>Alamat Email</strong></label></td>
+        <td><input type="email" name="email" size="30" /></td>
+      </tr>
+      <tr>
+        <td><label for="no_telp"><strong>Nomor Telepon</strong></label></td>
+        <td><input type="text" name="no_telp" size="30" /></td>
+      </tr>
+      <tr>
+        <td><label for="password"><strong>Password</strong></label></td>
+        <td><input type="password" name="password" size="30" /></td>
+      </tr>
+      <tr>
+        <td><label for="foto"><strong>Foto</strong></label></td>
+        <td><input type="file" name="foto" accept="image/*" required="required" /></td>
+      </tr>
+      <tr>
+        <td><label for="namasmu"><strong>Nama Sekolah Asal</strong></label></td>
+        <td><input type="text" name="namasmu" size="30" /></td>
+      </tr>
+      <tr>
+        <td><label for="alamatsmu"><strong>Alamat Sekolah Asal</strong></label></td>
+        <td><input type="text" name="alamatsmu" size="30" /></td>
+      </tr>
+      <tr>
+        <td><label for="teleponsmu"><strong>Telepon Sekolah Asal</strong></label></td>
+        <td><input type="text" name="teleponsmu" size="30" /></td>
+      </tr>
+      <tr>
+        <td valign="top"><strong>Hal Favorit</strong></td>
+        <td>
+          <p><strong>Musik</strong></p>
+          <input type="checkbox" name="hobi[]" value="Pop" />Pop
+          <input type="checkbox" name="hobi[]" value="Rock" />Rock
+          <input type="checkbox" name="hobi[]" value="Jazz" />Jazz
+          <p><strong>Film</strong></p>
+          <input type="checkbox" name="hobi[]" value="Drama" />Drama
+          <input type="checkbox" name="hobi[]" value="Action" />Action
+          <input type="checkbox" name="hobi[]" value="Sci-Fi" />Sci-Fi
+          <p><strong>Makanan</strong></p>
+          <input type="checkbox" name="hobi[]" value="Seafood" />Seafood
+          <input type="checkbox" name="hobi[]" value="Tradisional" />Tradisional
+          <input type="checkbox" name="hobi[]" value="Fastfood" />Fastfood
+        </td>
+      </tr>
+      <tr>
+        <td valign="top"><label for="resume"><strong>Resume</strong></label></td>
+        <td><textarea name="resume" rows="10" cols="23"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center">
+          <input type="submit" name="simpan" value="Simpan" />
+        </td>
+      </tr>
+    </table>
+  </form>
 </body>
 </html>
