@@ -1,83 +1,84 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reservasi Hotel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservasi Hotel</title>
 </head>
 <body>
-    <h1><strong>Reservation Hotel Room</strong></h1>
-    <form action="" method="post" enctype="multipart/form-data">
-        <fieldset>
-            <legend>Personal Data</legend>
-            
-            <label for="nama">1. Name</label><br>
-            <input type="text" id="nama" name="nama_lengkap" size="30"><br><br>
-            
-            <label for="gender">2. Gender</label><br>
-            <input type="text" id="gender" name="gender" size="30"><br><br>
-            
-            <label for="email">3. Email Address</label><br>
-            <input type="text" id="email" name="email" size="30"><br><br>
-            
-            <label for="telpon">4. Telp Number</label><br>
-            <input type="text" id="telpon" name="telpnumber" size="30">
-        </fieldset>
-        
-        <br>
-
-        <fieldset>
-            <legend>Reservation Room form</legend>
-
-            <label for="rsvname">1. Reservation Name</label><br>
-            <input type="text" id="rsvname" name="reservation_name" size="30"><br><br>
-            
-            <label for="bookingdate">2. Booking Date</label><br>
-            <input type="text" id="bookingdate" name="booking_date" size="30"><br><br>
-            
-            <label for="roomtype">3. Room type</label><br>
-            <select id="roomtype" name="roomtype" required>
-                <option>Deluxe</option>
-                <option>Standart</option>
-                <option>Superior</option>
-            </select><br><br>
-            
-            <label for="bedtype">4. Bed type</label><br>
-            <select id="bedtype" name="bedtype" required>
-                <option>Single Bed</option>
-                <option>Double Bed</option>
-                <option>King Size Bed</option>
-            </select><br><br>
-            
-            <label>5. Breakfast</label><br>
-            <input type="radio" id="with_bf" name="bf" value="With Breakfast">
-            <label for="with_bf">With Breakfast</label>
-            <input type="radio" id="without_bf" name="bf" value="Without Breakfast">
-            <label for="without_bf">Without Breakfast</label>
-        </fieldset>
-
-        <br>
-
-        <fieldset>
-            <legend>Payment</legend>
-
-            <label for="checkin">1. Check in Date</label><br>
-            <input type="text" id="checkin" name="checkin" size="30"><br><br>
-            
-            <label for="checkout">2. Check out Date</label><br>
-            <input type="text" id="checkout" name="checkout" size="30"><br><br>
-            
-            <label for="payment_method">3. Payment Method</label><br>
-            <select id="payment_method" name="payment_method">
-                <option>cash</option>
-                <option>Credit Card</option>
-                <option>Debit Card</option>
-            </select>
-        </fieldset>
-        
-        <br>
-        
-        <input type="submit" name="simpan" value="submit">
-    </form>
+  <h1><strong>Reservation Hotel Room</strong></h1>
+  <form action="" method="post" enctype="multipart/form-data">
+    
+    <fieldset>
+      <legend>Personal Data</legend>
+      
+      <label for="nama">1. Name</label><br />
+      <input type="text" id="nama" name="nama_lengkap" size="30" /><br /><br />
+      
+      <label for="gender">2. Gender</label><br />
+      <input type="text" id="gender" name="gender" size="30" /><br /><br />
+      
+      <label for="email">3. Email Address</label><br />
+      <input type="email" id="email" name="email" size="30" /><br /><br />
+      
+      <label for="telpon">4. Telp Number</label><br />
+      <input type="tel" id="telpon" name="telpnumber" size="30" />
+    </fieldset>
+    
+    <br />
+    
+    <fieldset>
+      <legend>Reservation Room Form</legend>
+      
+      <label for="rsvname">1. Reservation Name</label><br />
+      <input type="text" id="rsvname" name="reservation_name" size="30" /><br /><br />
+      
+      <label for="bookingdate">2. Booking Date</label><br />
+      <input type="text" id="bookingdate" name="booking_date" size="30" /><br /><br />
+      
+      <label for="roomtype">3. Room Type</label><br />
+      <select id="roomtype" name="roomtype" required="required">
+        <option>Deluxe</option>
+        <option>Standard</option>
+        <option>Superior</option>
+      </select><br /><br />
+      
+      <label for="bedtype">4. Bed Type</label><br />
+      <select id="bedtype" name="bedtype" required="required">
+        <option>Single Bed</option>
+        <option>Double Bed</option>
+        <option>King Size Bed</option>
+      </select><br /><br />
+      
+      <label>5. Breakfast</label><br />
+      <input type="radio" id="with_bf" name="bf" value="With Breakfast" />
+      <label for="with_bf">With Breakfast</label>
+      <input type="radio" id="without_bf" name="bf" value="Without Breakfast" />
+      <label for="without_bf">Without Breakfast</label>
+    </fieldset>
+    
+    <br />
+    
+    <fieldset>
+      <legend>Payment</legend>
+      
+      <label for="checkin">1. Check-in Date</label><br />
+      <input type="text" id="checkin" name="checkin" size="30" /><br /><br />
+      
+      <label for="checkout">2. Check-out Date</label><br />
+      <input type="text" id="checkout" name="checkout" size="30" /><br /><br />
+      
+      <label for="payment_method">3. Payment Method</label><br />
+      <select id="payment_method" name="payment_method">
+        <option>Cash</option>
+        <option>Credit Card</option>
+        <option>Debit Card</option>
+      </select>
+    </fieldset>
+    
+    <br />
+    
+    <input type="submit" name="simpan" value="Submit" />
+  </form>
 </body>
 </html>
